@@ -9,10 +9,9 @@
 	<link rel="stylesheet" type="text/css" href="assets/components/icon.min.css">
 	<link rel="stylesheet" type="text/css" href="assets/admin.css">
 	<link rel="icon" href="assets/images/icon.jpg">
-	
 	<script src="assets/jquery-2.1.3.min.js"></script>
-	<script src="assets/admin.js"></script>
 	<script src="assets/semantic/semantic.min.js"></script>
+	<script src="assets/admin.js"></script>	
 </head>
 <body>
 	
@@ -24,15 +23,15 @@
 			</a>
 			<!-- <a class="icon item" href="/collections/breadcrumb.html"><i class="left chevron icon"></i></a> -->
 			<div class="right menu">
-				<div class="ui dropdown link item visible" tabindex="0">
-					Yussan
+				<div class="ui dropdown link item visible">
+					<input type="hidden" name="gender">
 					<i class="dropdown icon"></i>
-					<div class="menu transition visible animating slide down out" tabindex="-1" style="-webkit-animation-duration: 250ms;">
-						<a class="item">Edit Profile</a>
-						<a class="item">Edit Password</a>
-						<a class="item">Logout</a>
+					<div style="color:#fff" class="default text">Yussan</div>
+					<div class="menu">
+						<div class="item" data-value="male">Edit Profile</div>
+						<div class="item" data-value="female">Logout</div>
 					</div>
-				</div>
+				</div>				
 			</div>
 		</div>
 	</div>
@@ -464,6 +463,9 @@
 		</div>
 	</div>
 	<!-- end of content -->
+	<script type="text/javascript">
+		$('.ui.dropdown').dropdown();
+	</script>
 	<!-- footer -->
 	<footer>
 		<section id="basefooter">
