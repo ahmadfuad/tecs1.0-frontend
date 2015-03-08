@@ -11,8 +11,8 @@
 	<link rel="icon" href="assets/images/icon.jpg">
 	
 	<script src="assets/jquery-2.1.3.min.js"></script>
-	<script src="assets/semantic/semantic.min.js"></script>
 	<script src="assets/admin.js"></script>
+	<script src="assets/semantic/semantic.min.js"></script>
 </head>
 <body>
 	
@@ -90,6 +90,7 @@
 				<p>Menambah update dan hapus data barang</p>
 				<br/>
 				<div class="row">
+					<a class="ui primary button" onclick="return $('#tambahbarang').toggle('fast');" href="#"><i class="plus icon"></i> Tambah Barang</a>
 					<div class="ui compact menu">
 						<a class="item active">
 							Semua Barang
@@ -123,6 +124,119 @@
 							<i class="right arrow icon"></i>
 						</a>						
 					</div>		
+				</div>
+				<div style="display:none" id="tambahbarang">
+					<form method="POST">
+						<div class="ui padded grid">
+							<form method="POST">
+								<div class="two column row">
+									<div class="column">
+										<h2 class="ui header">Tambah Barang</h2>
+										<p>Gunakan form ini untuk menambah barang</p>									
+									</div>
+									<div class="column">
+									</div>
+								</div>
+								<div class="two column row">
+									<div class="column">
+										<div class="ui form">
+											<div class="field">
+												<label>Id Barang <br/><small>gunakan barcode sebagai id barang</small></label>
+												<input type="number" placeholder="masukan barcode barang" required>
+											</div>
+										</div>								
+									</div>
+									<div class="column">
+										<label><br/><small></small></label>
+										<div class="ui negative small message">
+											kode sudah tedaftar
+										</div>
+									</div>
+								</div>
+
+								<div class="two column row">
+									<div class="column">
+										<div class="ui form">
+											<div class="field">
+												<label>Nama Barang</label>
+												<input type="text" placeholder="masukan nama barang" required>
+											</div>
+										</div>								
+									</div>
+									<div class="column">
+										
+									</div>
+								</div>
+
+								<div class="two column row">
+									<div class="column">
+										<div class="ui form">
+											<div class="field">
+												<label>Stok</label>
+												<input style="width:100px" type="number" placeholder="masukan stok barang" required>
+											</div>
+										</div>								
+									</div>
+									<div class="column">
+										
+									</div>
+								</div>
+
+								<div class="two column row">
+									<div class="column">
+										<div class="ui form">
+											<div class="field">
+												<label>Tentang Barang<br/><small>masukan segala hal tentang barang, meliputi asal, kondisi warna yang disediakan</small></label>
+												<textarea rows="2" placeholder="masukan deskripsi singkat barang" required></textarea>
+											</div>
+										</div>								
+									</div>
+									<div class="column">										
+									</div>
+								</div>
+
+								<div class="two column row">
+									<div class="column">
+										<div class="ui form">
+											<div class="field">
+												<label>Kategori Barang<br/><small>pilih kategori barang</small></label>
+												<select>
+													<option value="">pilih kategori</option>
+													<option value="">display</option>
+													<option value="">konektor</option>
+												</select>
+											</div>
+										</div>								
+									</div>
+									<div class="column">										
+									</div>
+								</div>
+
+								<div class="two column row">
+									<div class="column">
+										<div class="ui form">
+											<div class="field">
+												<label>Spesifikasi Barang<br/><small>contoh penulisan spesifikasi sebagai berikut:<i><br/>monitor:14inc|harddisk:34GB<i></small></label>
+												<textarea rows="2" placeholder="masukan deskripsi singkat barang" required></textarea>
+											</div>
+										</div>								
+									</div>
+									<div class="column">										
+									</div>
+								</div>
+
+								<div class="two column row">
+									<div class="column">
+										<button type="submit" name="hapus" class="primary ui button"><i class="save icon"></i> Simpan</button>
+
+									</div>
+									<div class="column">
+										
+									</div>
+								</div>
+							</form>
+						</div>
+					</form>
 				</div>
 				<br/>
 				<!-- content -->
