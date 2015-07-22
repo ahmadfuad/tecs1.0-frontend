@@ -1,5 +1,14 @@
 /*base*/
-header{height:140px;background-color:#384245;color:#FFF;
-}
+@font-face{font-family:latomedium;src:url(font/Lato-Medium.ttf);}
+body{font-family:latomedium !important;background-color:#fff !important}
+header{padding:10px;background-color:#384245;color:#FFF;}
+header a{color:#fff !important;}
+header .logo{ background-image: url('logo.png');height: 60px;width: 250px;background-size: cover;}
+header .right-menu{float:right;color:#7C8284;}
+header .right-menu a{color:#A2AAAD !important;text-decoration: underline;}
 nav{padding:10px;background-color:#313739;color:#FFF;}
 nav a{color:#FFF !important;}
+.newsbar{background-color:#f3f5f6}
+.newsbar .menu{padding:10px;}
+.newsbar a{color:#536874 !important;}
+.supportby img{width:100%;height:50px;vertical-align:middle}

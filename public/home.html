@@ -6,6 +6,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 	<title>Tecs</title>
 	<link media="screen" rel="stylesheet" type="text/css" href="../assets/semantic/semantic.min.css">
+	<link rel="icon" href="../assets/images/icon.jpg">
 	<link rel="stylesheet" type="text/css" href="../assets/components/icon.min.css">
 	<link rel="stylesheet" type="text/css" href="../assets/tecs.css">
 	<link rel="icon" href="assets/images/icon.jpg">
@@ -14,45 +15,92 @@
 	<script src="../assets/semantic/semantic.min.js"></script>
 	<script src="../assets/tecs.js"></script>	
 </head>
+<!-- class page untuk 80% width -->
 <body ng-app="TecsApp">
-	<!-- HEADER -->
-	<header class="">
-		<div class="ui two column grid container">
-			<div class="column">
-				<p>...</p>
-				<p></p>
-			</div>
-			<div class="column">
-				<p>...</p>
-				<p></p>
-			</div>
-		</div>		
-	</header>
-	<!-- navbar -->
-	<nav>
-		<div style="background-color:transparent;border:none" class="ui top attached menu">
-			<a class="active item">
-				Kategori
-			</a>
-			<a class="item">
-				Cara Beli
-			</a>
-			<a class="item">
-				Konfirmasi Pembayaran
-			</a>
-			<div class="right menu">
-				<div class="item">
-					<div class="ui icon input">
-						<input type="text" placeholder="Search...">
-						<i class="search link icon"></i>
+	<span ng-controller="CtrlHeader">
+		<!-- HEADER -->
+		<header class="">
+			<div class="ui two column page grid">
+				<div class="column"><div class="logo"></div></div>
+				<div class="column">
+					<div class="right-menu">
+						<p>customer service : <a href="#">cs@tecs.com</a> <a href="#">bantuan</a></p>
 					</div>
 				</div>
-				<a class="ui item">
-					Logout
-				</a>
+			</div>		
+		</header>
+		<!-- navbar -->
+		<nav>
+			<div class="ui page grid">
+				<div style="background-color:transparent;box-shadow:none" class="ui top attached menu">
+					<a class="item">
+						Kategori
+					</a>
+					<a class="item">
+						Cara Beli
+					</a>
+					<a class="item">
+						Konfirmasi Pembayaran
+					</a>
+					<div class="right menu">
+						<div class="item">
+							<div class="ui icon input">
+								<input style="width:100%" type="text" placeholder="Search...">
+								<i class="search link icon"></i>
+							</div>
+						</div>
+						<a class="ui item">
+							<i class="lock icon"></i> Login
+						</a>
+						<a class="ui item">
+							<i class="shop icon"></i> Cart
+						</a>
+					</div>
+				</div>	
 			</div>
-		</div>	
-	</nav>
+		</nav>
+		<!-- NEWS -->
+		<div class="newsbar ui page grid">
+			<div style="background-color:transparent;box-shadow:none" class="ui top secondary menu">
+				<a class="item">Produk Baru</a>
+				<a class="item">Bestsellers</a>
+				<a class="item">Software</a>
+				<a class="item">Kategori Lain</a>
+				<a class="item">Kategori Lain</a>
+				<a class="item">Kategori Lain</a>
+				<a class="item">Kategori Lain</a>
+				<a class="item">Kategori Lain</a>
+				<a class="item">Kategori Lain</a>
+				<a class="item">Kategori Lain</a>
+			</div>	
+		</div>
+		<!-- END OF NEWS -->
+	</span>
+	<!-- SUPPORT BY -->
+	<div class="ui eight column page grid supportby">
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/deepcool.png"></a></div>
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/nvidia.png"></a></div>
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/samsung.png"></a></div>
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/samsung.png"></a></div>
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/samsung.png"></a></div>
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/samsung.png"></a></div>
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/samsung.png"></a></div>
+		<div class="supportby-item column"><a href="#"><img src="../assets/images/supportby/samsung.png"></a></div>
+	</div>		
+	<!-- END OF SUPPORT BY -->
+	
+	<!-- TABULAR -->
+	<span ng-controller="CtrlTabular">
+		<div class="ui eight column page grid tabular">
+		..
+		</div>
+		<div class="ui three column page grid tabular-key">
+			<div class="column"><a href="#">Tab 1</a></div>
+			<div class="column"><a href="#">Tab 2</a></div>
+			<div class="column"><a href="#">Tab 3</a></div>
+		</div>
+	</span>
+	<!-- END OF TABULAR -->
 	<!-- BODY -->
 	<body>
 		
