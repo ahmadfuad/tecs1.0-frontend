@@ -26,15 +26,12 @@ nav a{color:#D1D3D3 !important;text-transform:uppercase;}
 /*item*/
 .item-thumb p{margin:0;color:#617179;text-transform: capitalize;}
 div.thumb{width:100%;background-color:#f4f4f4}
-<<<<<<< HEAD
-=======
 /*single*/
 h1.title{text-transform:capitalize;margin:0;}
 .single-detail{}
 .single-detail .main-picture{width:100%;}
 .single-detail .price{font-size: 1.6em}
 .single-detail .status{color:#7ac143;font-weight:700;font-size: 13px;}
->>>>>>> d45dfd54579ebb7b702e63344131469635563e6c
 /*footer*/
 footer{margin-top:75px;background-color:#dee4e7}
 footer .level1{background-color:#dee4e7;padding:10px;/* padding-bottom: 0 !important; *//* margin-bottom: 0 !Important; */}
